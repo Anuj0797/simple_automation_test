@@ -6,6 +6,9 @@ Scenario('test something', ({ I }) => {
     I.selectOption({css: 'select[id=id_contact]'},"Webmaster")
     I.fillField({css: 'input[id=email]'}, 'Anuj@Anuj.com');
     I.fillField({css: 'input[id=id_order]'}, '928464');
+    I.fillField({css: 'textarea[id=message]'}, 'Hello this just a test to check the form');
+    // I.attachFile('/html[1]/body[1]/div[1]/div[2]/div[1]/div[3]/div[1]/form[1]/fieldset[1]/div[1]/div[1]/p[5]/div[1]/span[1]', 'MyFirstAutomation/data.jpg');
+    I.click('Send');
     I.saveScreenshot("selectoptions.jpg");
     I.wait(20);
     // I.fillField('input', 'Anuj');
